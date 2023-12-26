@@ -7,7 +7,8 @@ import bodyParser from "body-parser";
 
 AppDataSource.initialize().then(() => {
   const app = express();
-  app.use([cors(), bodyParser.json()]);
+  // app.use([cors(), bodyParser.json()]);
+  app.use(bodyParser.json());
 
   const server = http.createServer(app);
 
