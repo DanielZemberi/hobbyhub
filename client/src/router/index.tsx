@@ -17,7 +17,7 @@ const Router = () => {
           path: "/sign-in",
           element: (
             <div className="flex justify-center items-center">
-              <SignInButton afterSignInUrl="/authorized" />
+              <SignInButton afterSignInUrl="/pick-interests" />
             </div>
           ),
         },
